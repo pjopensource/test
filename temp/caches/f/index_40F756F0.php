@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1402850779;s:8:"maketime";i:1402847179;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1402852156;s:8:"maketime";i:1402848556;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" /> 
@@ -1520,6 +1520,7 @@ new Marquee("MarqueeDiv2",1,0.1,960,100,20,4000,5000)	//向上间歇滚动(缓�
 <div class="floor_shadow "></div>                         
 </div></div>
     <div class="clear"></div>    
+ 
 <div id="footer_container">
   <div id="footer">  
 <div class="footer_top">
@@ -1596,7 +1597,8 @@ new Marquee("MarqueeDiv2",1,0.1,960,100,20,4000,5000)	//向上间歇滚动(缓�
 </div>
 <!--
 554fcae493e564ee0dc75bdf2ebf94cakefushow|a:1:{s:4:"name";s:8:"kefushow";}554fcae493e564ee0dc75bdf2ebf94ca-->
-<script src="/js/qq_float_right.js"></script><SCRIPT type=text/javascript>
+<script src="/js/qq_float_right.js"></script>    
+<SCRIPT type=text/javascript>
 $(document).ready(function () {
             Jumei.Core.init();
             Jumei.Account.init();
