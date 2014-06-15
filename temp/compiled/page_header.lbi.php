@@ -171,13 +171,14 @@ if ($this->_foreach['nav_middle_list']['total'] > 0):
     <div class="mall_nav">
     <div class="mall_nav_box" <?php if (! $this->_var['index']): ?> style="background:#F2F2F2"<?php endif; ?>>
                         <ul class="nav">
+           <!--
             <li><div class="border"><a href="search.php?intro=new" target="_blank" style="color:#7e0b18" >最新上架</a></div></li>
             <li><div class="border"><a href="#" target="_blank" style="color:#d4062d">保湿专区</a></div></li>
             <li><div class="border"><a href="#" target="_blank"  >抗皱专区</a></div></li>
             <li><div class="border"><a href="#" target="_blank" >香水专区</a></div></li>
             <li><div class="border"><a href="#" target="_blank" >美白专区</a></div></li>
 		    <li><div class="border"><a href="#" target="_blank" >补水专区</a></div></li>
-						
+			-->			
 
           
                   </ul>

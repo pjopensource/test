@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1402824497;s:8:"maketime";i:1402820897;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1402834165;s:8:"maketime";i:1402830565;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" /> 
@@ -228,34 +228,9 @@ function showtopMenu(dos){
                               </LI>           
 		                   <LI onMouseOver="sw_nav('3',1);" onMouseOut="sw_nav('3',0);"   >
         <DIV class="mainmenu_li" id=HandleLI_3 >
-                        <a href="category.php?id=12">置家宝</a></DIV>
-		    
-	  	            <DIV id=DisSub_3 style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
-          <DIV class="layer">
-            <DIV class=layer_left>
-              <DL>
-                     <DD><a  href="category.php?id=43" title="男士香水"  target="_blank">男士香水</a></DD>
-         
-                <DD><a  href="category.php?id=44" title="女士香水"  target="_blank">女士香水</a></DD>
-         
-                <DD><a  href="category.php?id=45" title="Q 装"  target="_blank">Q 装</a></DD>
-         
-                <DD><a  href="category.php?id=46" title="中性香水"  target="_blank">中性香水</a></DD>
-         
-                <DD><a  href="category.php?id=47" title="香体露"  target="_blank">香体露</a></DD>
-         
-         
-              </DL>
-            </DIV>
-            
-          </DIV>
-        </DIV>
-                              </LI>           
-		                   <LI onMouseOver="sw_nav('4',1);" onMouseOut="sw_nav('4',0);"   >
-        <DIV class="mainmenu_li" id=HandleLI_4 >
                         <a href="category.php?id=16">装修服务</a></DIV>
 		    
-	  	            <DIV id=DisSub_4 style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
+	  	            <DIV id=DisSub_3 style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
           <DIV class="layer">
             <DIV class=layer_left>
               <DL>
@@ -282,29 +257,8 @@ function showtopMenu(dos){
           </DIV>
         </DIV>
                               </LI>           
-		                   <LI onMouseOver="sw_nav('5',1);" onMouseOut="sw_nav('5',0);"   >
-        <DIV class="mainmenu_li" id=HandleLI_5 >
-                        <a href="category.php?id=17">企业服务</a></DIV>
-		    
-	  	            <DIV id=DisSub_5 style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
-          <DIV class="layer">
-            <DIV class=layer_left>
-              <DL>
-                     <DD><a  href="category.php?id=55" title="化妆刷"  target="_blank">化妆刷</a></DD>
-         
-                <DD><a  href="category.php?id=56" title="化妆棉"  target="_blank">化妆棉</a></DD>
-         
-                <DD><a  href="category.php?id=57" title="美容仪器"  target="_blank">美容仪器</a></DD>
-         
-         
-              </DL>
-            </DIV>
-            
-          </DIV>
-        </DIV>
-                              </LI>           
-		                   <LI onMouseOver="sw_nav('6',1);" onMouseOut="sw_nav('6',0);"   >
-        <DIV class="mainmenu_li" id=HandleLI_6 >
+		                   <LI onMouseOver="sw_nav('4',1);" onMouseOut="sw_nav('4',0);"   >
+        <DIV class="mainmenu_li" id=HandleLI_4 >
                         <a href="222">所有品牌</a></DIV>
 		    
 	                </LI>           
@@ -329,13 +283,14 @@ function showtopMenu(dos){
     <div class="mall_nav">
     <div class="mall_nav_box" >
                         <ul class="nav">
+           <!--
             <li><div class="border"><a href="search.php?intro=new" target="_blank" style="color:#7e0b18" >最新上架</a></div></li>
             <li><div class="border"><a href="#" target="_blank" style="color:#d4062d">保湿专区</a></div></li>
             <li><div class="border"><a href="#" target="_blank"  >抗皱专区</a></div></li>
             <li><div class="border"><a href="#" target="_blank" >香水专区</a></div></li>
             <li><div class="border"><a href="#" target="_blank" >美白专区</a></div></li>
 		    <li><div class="border"><a href="#" target="_blank" >补水专区</a></div></li>
-						
+			-->			
           
                   </ul>
     <div class="serchkeyword" >
@@ -546,7 +501,7 @@ function showtopMenu(dos){
 </div>
 <div class="left_shadow" style="margin-bottom: 7px;"></div></div>
 <div class="fr" style="width:760px;">
-  <div class="mtsBanner" id="mtsBanner">
+    <div class="mtsBanner" id="mtsBanner">
         <STYLE>
 B {
 	FONT-SIZE: 12px; TEXT-DECORATION: none
@@ -567,7 +522,7 @@ IMG {
 	<div id="JINGDONGBox">
 		<ul id="JINGDONGContentID">
 			    
-         			<li><a href=""><img border="0" src="/data/afficheimg/1367714774913839607.jpg" alt="科勒" width="760" height="311"/></a></li>	 	
+         			<li><a href=""><img border="0" src="/data/afficheimg/1367714774913839607.jpg" alt="科勒" width="760" height="311"/></a></li>	         			<li><a href=""><img border="0" src="/data/afficheimg/1402801185385917711.jpg" alt="test" width="760" height="311"/></a></li>	 	
 					
 					  </ul>
 	</div>
@@ -604,31 +559,7 @@ new Marquee("MarqueeDiv1",2,20,760,253,20,4000,5000,190)
 </div>
 <div class="clear"></div>
 </div>
-  <div class="brands_container">
-        <div class="bc_cate fl" id="bc_cate">
-            <a href="javascript:;" class=" hover"  id="goods1" onmouseover="setTabCatGoods('goods',1,3)">
-                推荐品牌
-            </a>
-            <a href="javascript:;"  id="goods2" onmouseover="setTabCatGoods('goods',2,3)">
-                欧美品牌
-            </a>
-            <a href="javascript:;"  id="goods3" onmouseover="setTabCatGoods('goods',3,3)">
-                亚洲品牌
-            </a>        </div>
-        <div class="bc_con fr">
-          <div style="display: block;" id="con_goods_1">
-		    	               <a href="brand.php?id=13"><img src="data/brandlogo/1368229246066239900.jpg" alt="西蒙开关 (2)" class="lazy_img" width="120" height="49" /></a>
-              	   	   	   	   	   	   	   	   	   	   	   	   	                                        
-        </div>
-          <div style="display: none;" id="con_goods_2">
-      		    	   	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	    	 	 	     
-                                      
-        </div>          <div style="display: none;" id="con_goods_3">
-     		    	   	               	               	               	               	               	               	               	               	               	               	               	               	                  
-        </div>
-        
-      </div>
-    <div class="clear"></div>
+  <div class="">
 </div>   
   <div class="floor_shadow"></div> 
 <div id="skincare" class="floor">
@@ -1588,6 +1519,7 @@ new Marquee("MarqueeDiv2",1,0.1,960,100,20,4000,5000)	//向上间歇滚动(缓�
 <div class="floor_shadow "></div>                         
 </div></div>
     <div class="clear"></div>    
+ 
 <div id="footer_container">
   <div id="footer">  
 <div class="footer_top">
@@ -1674,3 +1606,4 @@ $(document).ready(function () {
 </SCRIPT>
 </body>
 </html>
+          

@@ -153,64 +153,7 @@ new Marquee("MarqueeDiv1",2,20,760,253,20,4000,5000,190)
 
 <div class="clear"></div>
 </div>
-
-
-  <div class="brands_container">
-        <div class="bc_cate fl" id="bc_cate">
-            <a href="javascript:;" class=" hover"  id="goods1" onmouseover="setTabCatGoods('goods',1,3)">
-                推荐品牌
-            </a>
-            <a href="javascript:;"  id="goods2" onmouseover="setTabCatGoods('goods',2,3)">
-                欧美品牌
-            </a>
-            <a href="javascript:;"  id="goods3" onmouseover="setTabCatGoods('goods',3,3)">
-                亚洲品牌
-            </a>        </div>
-        <div class="bc_con fr">
-          <div style="display: block;" id="con_goods_1">
-		    <?php $_from = $this->_var['brand_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'brand');$this->_foreach['brand_foreach'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['brand_foreach']['total'] > 0):
-    foreach ($_from AS $this->_var['brand']):
-        $this->_foreach['brand_foreach']['iteration']++;
-?>
-	 <?php if ($this->_var['brand']['sort_order'] <= 20): ?>
-      <?php if ($this->_var['brand']['brand_logo']): ?>
-        <a href="<?php echo $this->_var['brand']['url']; ?>"><img src="data/brandlogo/<?php echo $this->_var['brand']['brand_logo']; ?>" alt="<?php echo htmlspecialchars($this->_var['brand']['brand_name']); ?> (<?php echo $this->_var['brand']['goods_num']; ?>)" class="lazy_img" width="120" height="49" /></a>
-      <?php endif; ?>
-      <?php endif; ?>
-  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>                                     
-        </div>
-          <div style="display: none;" id="con_goods_2">
-      		    <?php $_from = $this->_var['brand_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'brand');$this->_foreach['brand_foreach'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['brand_foreach']['total'] > 0):
-    foreach ($_from AS $this->_var['brand']):
-        $this->_foreach['brand_foreach']['iteration']++;
-?>
-	 <?php if ($this->_var['brand']['sort_order'] > 20): ?>
-	 <?php if ($this->_var['brand']['sort_order'] < 50): ?>
-      <?php if ($this->_var['brand']['brand_logo']): ?>
-        <a href="<?php echo $this->_var['brand']['url']; ?>"><img src="data/brandlogo/<?php echo $this->_var['brand']['brand_logo']; ?>" alt="<?php echo htmlspecialchars($this->_var['brand']['brand_name']); ?> (<?php echo $this->_var['brand']['goods_num']; ?>)" class="lazy_img" width="120" height="49" /></a>
-      <?php endif; ?>
-      <?php endif; ?>
-	  <?php endif; ?>
-  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?> 
-                                      
-        </div>          <div style="display: none;" id="con_goods_3">
-     		    <?php $_from = $this->_var['brand_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'brand');$this->_foreach['brand_foreach'] = array('total' => count($_from), 'iteration' => 0);
-if ($this->_foreach['brand_foreach']['total'] > 0):
-    foreach ($_from AS $this->_var['brand']):
-        $this->_foreach['brand_foreach']['iteration']++;
-?>
-	 <?php if ($this->_var['brand']['sort_order'] >= 50): ?>
-      <?php if ($this->_var['brand']['brand_logo']): ?>
-        <a href="<?php echo $this->_var['brand']['url']; ?>"><img src="data/brandlogo/<?php echo $this->_var['brand']['brand_logo']; ?>" alt="<?php echo htmlspecialchars($this->_var['brand']['brand_name']); ?> (<?php echo $this->_var['brand']['goods_num']; ?>)" class="lazy_img" width="120" height="49" /></a>
-      <?php endif; ?>
-      <?php endif; ?>
-  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>   
-        </div>
-        
-      </div>
-    <div class="clear"></div>
+  <div class="">
 </div>   
   <div class="floor_shadow"></div> 
 <div id="skincare" class="floor">
