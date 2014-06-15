@@ -51,9 +51,12 @@ if ($this->_foreach['topssgoods']['total'] > 0):
   </div>
 </div>
 
+<!--
 <?php 
 $k = array (
   'name' => 'kefushow',
 );
 echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
 ?>
+-->
+    
