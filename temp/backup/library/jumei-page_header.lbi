@@ -1,0 +1,224 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="themes/jumei/images/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<script language="javascript"> 
+<!--
+/*屏蔽所有的js错误*/
+function killerrors() { 
+return true; 
+} 
+window.onerror = killerrors; 
+//-->
+</script>
+<SCRIPT>
+function ask(txt) {
+return window.confirm(txt);
+}
+function bookmark(){
+if(ask("要将本站点加入收藏夹吗？")) {
+  var title = document.title
+  var domain = window.location.hostname;
+  var url = window.location.href;
+  if( document.all ) { // ie
+   window.external.AddFavorite(url, title);
+  } else if (window.sidebar) { // firefox
+   window.sidebar.addPanel(title, url, title);
+  }
+}
+}
+function setIndex(obj) {
+var domain = window.location.hostname;
+domain = "http://" + domain + "/";
+if(ask("要将本站设为首页吗？")) {
+  if( document.all ) { // ie
+   obj.style.behavior='url(#default#homepage)';
+   obj.setHomePage(domain);
+  } else if (window.sidebar) { // firefox
+   if(window.netscape) {
+       try {  
+              netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+          } catch (e) {  
+        alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" );  
+          }
+      } 
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components. interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage', domain);
+   }
+}
+}
+</SCRIPT> 
+<!--[if IE 6]>
+<script type="text/javascript">
+try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+</script>
+<![endif]-->
+<div id="header_container">
+        <div id="user_header">
+        <div id="user_control">
+              <ul class="menu_header">
+			  <li class="menu_intro"><a href="#" target="_blank"><span class="arrow"></span>邀请好友</a><em>|</em></li>
+			  
+        <li class="menu_stow"><a onclick=bookmark(); href="javascript: void 0;" id="bookmark_us"><span class="arrow"></span>加入收藏</a><em>|</em></li>
+         <li id="my_jumei_attention_link" style="position:relative; overflow:inherit; z-index:999;">
+          
+      <div class="headeraccount" style="position:relative;" onmouseover="showtopMenu('show')" onmouseout="showtopMenu('hide')" >
+         <a href="user.php" target="_blank" title="我的账户" id="myxiu_a" style="position:relative; left:5px; width:60px; color:#d4062d; z-index:999; top:1px;background:url(themes/jumei/images/top_corn.gif) no-repeat right 12px; *background:url(themes/jumei/images/top_corn.gif) no-repeat right 10px;_background:url(themes/jumei/images/top_corn.gif) no-repeat right 12px;" class="">关注我们</a>
+		 
+      
+		  <div  id="topnavboxss" style=" display:none; ">
+                        <ul>
+                            <li class="sina"><a href="http://e.weibo.com/tuanmei" rel="nofollow" target="_blank"><span class="arrow"></span>新浪微博</a></li>
+                            <li class="qqblog"><a href="http://e.t.qq.com/jumei_tuangou" rel="nofollow" target="_blank"><span class="arrow"></span>腾讯微博</a></li>
+                            <li class="qq"><a href="http://user.qzone.qq.com/2460070261" rel="nofollow" target="_blank"><span class="arrow"></span>QQ空间</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+		  
+          <SCRIPT language=Javascript>
+function showtopMenu(dos){
+	if(dos=='show'){
+		document.getElementById('topnavboxss').style.display="block";
+			document.getElementById('myxiu_a').className="hover";
+	}else{
+		document.getElementById('topnavboxss').style.display="none";
+		document.getElementById('myxiu_a').className="";
+	}
+}
+</SCRIPT>
+        </div>
+                  </li>
+              
+              </ul>
+              <ul class="login_header">
+           {insert_scripts files='transport.js,utils.js'}
+   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+  
+                 
+                              </ul>
+        </div>
+    </div>
+    <div id="logo">
+		<a href="index.php" id="home"><img src="images/logo.png" ></a>
+        <a id="cart" href="flow.php" style="background:none; margin-left:715px;"><img src="themes/jumei/images/gouwudd.jpg" ></a>
+        <a href="#" class="top_link persent" target="_blank"></a>
+        <a href="#" class="top_link credit" target="_blank"></a>
+        <a href="#" class="top_link gild" target="_blank"></a>
+        <a href="#" class="top_link lightning" target="_blank"></a>
+        	
+</div>
+    <div class="clear"></div>
+    <div id="top_menu" >
+        <div id="top_nav">
+                    <div style="float: left; width:720px;">
+  <UL class=mainmenu id=mainmenu>
+    
+
+  
+  
+      <LI class=mainmenu_li {if $navigator_list.config.index eq 1} style="background:#d4062d"{/if} ><a href="../index.php">{$lang.home}</a></LI>
+	    <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+                  <LI onMouseOver="sw_nav('{$smarty.foreach.nav_middle_list.iteration}',1);" onMouseOut="sw_nav('{$smarty.foreach.nav_middle_list.iteration}',0);"   {if $nav.active eq 1} style="background:#d4062d"{/if}>
+        <DIV class="mainmenu_li" id=HandleLI_{$smarty.foreach.nav_middle_list.iteration} >
+                        <a href="{$nav.url}">{$nav.name}</a></DIV>
+		  <?php $this->assign('catchild', get_child_tree($GLOBALS['smarty']->_var['nav']['cid']));?>  
+	  <!--{if $nav.cid}-->
+	    <!--{if $catchild}-->
+        <DIV id=DisSub_{$smarty.foreach.nav_middle_list.iteration} style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
+          <DIV class="layer">
+            <DIV class=layer_left>
+              <DL>
+             <!--{foreach from=$catchild item=child}-->
+        <DD><a  href="{$child.url}" title="{$child.name|escape:html}"  target="_blank">{$child.name|escape:html}</a></DD>
+         
+        <!--{/foreach}--> 
+              </DL>
+            </DIV>
+            
+          </DIV>
+        </DIV>
+           <!--{/if}-->     <!--{/if}-->
+              </LI>           
+		 <!-- {/foreach} -->			   	   
+                </UL>
+            </div>
+             
+                <div class="top_search_wrap" >
+                  <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  >
+                   <div class="top_search_bg">
+                        <input name="keywords" type="text" class="top_search_input" id="keyword" value="补水"/>
+                    </div>
+                    <div id="search_btn" class="div_after top_search_buttom">
+                     <input name="imageField" type="submit" value="" style="cursor:pointer; background:url(images/images/search_top_buttom.jpg); border:none; width:32px; height:26px;" /> 
+                      
+                    </div>
+                      </form>
+                </div>
+                    </div>
+    </div>
+    </div>
+    <div class="mall_nav">
+    <div class="mall_nav_box" {if !$index} style="background:#F2F2F2"{/if}>
+                        <ul class="nav">
+            <li><div class="border"><a href="search.php?intro=new" target="_blank" style="color:#7e0b18" >最新上架</a></div></li>
+            <li><div class="border"><a href="#" target="_blank" style="color:#d4062d">保湿专区</a></div></li>
+            <li><div class="border"><a href="#" target="_blank"  >抗皱专区</a></div></li>
+            <li><div class="border"><a href="#" target="_blank" >香水专区</a></div></li>
+            <li><div class="border"><a href="#" target="_blank" >美白专区</a></div></li>
+		    <li><div class="border"><a href="#" target="_blank" >补水专区</a></div></li>
+						
+
+          
+                  </ul>
+    <div class="serchkeyword" >
+	{if $searchkeywords}
+   {$lang.hot_search} ：
+   {foreach from=$searchkeywords item=val}
+   <a href="search.php?keywords={$val|escape:url}">{$val}</a>&nbsp;&nbsp;
+   {/foreach}
+   {/if}
+    </div>
+                </div>      
+</div>
+  
+     <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+<script type="text/javascript">
+      //初始化主菜单
+		function sw_nav(obj,tag)
+		{
+		var DisSub = document.getElementById("DisSub_"+obj);
+		var HandleLI= document.getElementById("HandleLI_"+obj);
+			if(tag==1)
+			{
+				DisSub.style.display = "block";
+				HandleLI.className="mainmenu_li current";
+				
+			}
+			else
+			{
+				DisSub.style.display = "none";
+				HandleLI.className="mainmenu_li";
+			}
+		}
+      </script>
+<div class="yl_up">
+	<a class="bookmark" href="message.php"></a> <a href="#top" class="to_top" align="absmiddle" alt="回顶部"></a>
+</div><div class="blank" id="kbaidddddd"></div>

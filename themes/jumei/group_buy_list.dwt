@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="stylecommon.css" rel="stylesheet" type="text/css" />
+<link href="group.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="root61">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<style>
+#kbaidddddd{display:none;}
+</style>
+<script>
+var Tday = new Array();
+var daysms = 24 * 60 * 60 * 1000
+var hoursms = 60 * 60 * 1000
+var Secondms = 60 * 1000
+var microsecond = 1000
+var DifferHour = -1
+var DifferMinute = -1
+var DifferSecond = -1
+function clock(key)
+  {
+   var time = new Date()
+   var hour = time.getHours()
+   var minute = time.getMinutes()
+   var second = time.getSeconds()
+   var timevalue = ""+((hour > 12) ? hour-12:hour)
+   timevalue +=((minute < 10) ? ":0":":")+minute
+   timevalue +=((second < 10) ? ":0":":")+second
+   timevalue +=((hour >12 ) ? " PM":" AM")
+   var convertHour = DifferHour
+   var convertMinute = DifferMinute
+   var convertSecond = DifferSecond
+   var Diffms = Tday[key].getTime() - time.getTime()
+   DifferHour = Math.floor(Diffms / daysms)
+   Diffms -= DifferHour * daysms
+   DifferMinute = Math.floor(Diffms / hoursms)
+   Diffms -= DifferMinute * hoursms
+   DifferSecond = Math.floor(Diffms / Secondms)
+   Diffms -= DifferSecond * Secondms
+   var dSecs = Math.floor(Diffms / microsecond)
+   
+   if(convertHour != DifferHour) a=DifferHour+"<em>天</em>";
+   if(convertMinute != DifferMinute) b=DifferMinute+"<em>时</em>";
+   if(convertSecond != DifferSecond) c=DifferSecond+"<em>分</em>"
+     d=dSecs+"<em>秒</em>"
+     if (DifferHour>0) {a=a} 
+     else {a=''}
+   document.getElementById("leftTime"+key).innerHTML = a + b + c + d; //显示倒计时信息
+  
+  }
+</script>
+
+<div style="background:#f2f2f2">
+<div class="block group_buy_list clearfix"  style="background:#f2f2f2">
+ <div class="blank"></div>
+
+            <!-- TemplateBeginEditable name="团购顶部广告" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->  <div class="blank"></div>
+   <div class="blank"></div>
+  
+  <div class="group_l">
+  <div class="home_deal_list">
+ 
+ 
+ 
+ 
+         
+ 
+ 
+  <!--{foreach from=$gb_list item=group_buy key=key name=groupname} 循环团购活动开始 -->
+  
+    <!-- {if $smarty.foreach.groupname.iteration ==1}-->
+
+   <div class="big_list clearfix">
+     <div class="share">
+<h4>分享到：</h4>
+     <ul>
+  
+    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <a class="bds_qzone" title="分享到QQ空间" href="group.html#"></a><span>QQ空间</span>
+        <a class="bds_tsina" title="分享到新浪微博" href="group.html#"></a><span>新浪微博</span>
+        <a class="bds_tqq" title="分享到腾讯微博" href="group.html#"></a><span>腾讯微博</span>
+        <a class="bds_renren" title="分享到人人网" href="group.html#"></a><span>人人网</span>
+        <span class="bds_more"> </span>
+		<a class="shareCount" href="group.html#" title="累计分享0次">0</a>
+    </div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=2733582" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=20120918.2"></script>
+<script type="text/javascript" id="bdshell_js" src="http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=16"></script>
+<script type="text/javascript">
+	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+</ul>
+</div>
+<div class="blank"></div>
+
+<div class="tit"><span style="color: #ed145b;">今日团购推荐: </span><a class="all-p-ml" href="{$group_buy.url}" target="_blank">{if $group_buy.group_title}{$group_buy.group_title}{else}{$group_buy.act_name}{/if}</a></div>
+<div class="deal_info">
+    <div class="ribbon">
+        <div class="bg">&nbsp;</div>
+        <div class="buyit">
+        <strong><em>¥</em><!-- {foreach from=$group_buy.price_ladder item=item name=foo} --><!-- {if $smarty.foreach.foo.last} -->{$item.price}<!-- {/if} --><!-- {/foreach} --></strong>
+        <a href="{$group_buy.url}" target="_blank"></a>        </div>
+    </div>
+    <div class="deal_info_box">
+        <div class="price">
+            <table>
+            <tbody><tr>
+            <th class="market_price">市场价</th>
+            <th class="discount">折扣</th>
+            <th>您节省</th>
+            </tr>
+            <tr>
+            <td class="market_price">{$group_buy.market_price}</td>
+            <td>{$group_buy.t_discount}折</td>
+            <td>{$group_buy.formated_rebate_price}</td>
+            </tr>
+            </tbody></table>
+        </div>
+    <div class="countdown">
+    <input type="hidden" class="time_left" value="15247">
+    <div class="timer">
+    <span class="icon" style="float:left"></span>
+    <font id="leftTime{$key}"></font>   
+	
+	 </div>
+    </div>
+    
+    <div class="deal_status ">
+        <div class="purhcase_number" style="font-size:12px">
+		<table>
+		<td>
+        <span class="icon"></span></td>
+        <td><b class="pink">{if $group_buy.isg_rs eq 1}{$group_buy.group_rs}{else}{$group_buy.cur_amount}{/if}</b>人已经购买<br/>数量有限,下手要快哦！  
+		</td>
+		</table>
+		     </div>
+        <div class="blank"></div>
+       
+    </div>
+    <div class="shadow_triangle"></div>
+    </div>
+</div>
+<div style=" float:right; width:450px; text-align:center">
+<a href="{$group_buy.url}" target="_blank"><img alt="{$group_buy.act_name|escape:html}" src="{$group_buy.group_img}"> </a>
+ 
+</div>
+<div class="blank"></div>
+ </div>
+ <div class="blank" style="height:10px;  border-bottom:1px solid #ccc"></div>
+            
+   
+<script>
+Tday[{$key}] = new Date("{$group_buy.gmt_end_date|default:0}");
+window.setInterval(function()     
+{clock({$key});}, 1000);     
+</script>
+
+<div style=" clear:both"></div>
+  <!--{else if}-->
+
+             
+ <div class="toady_deal_list" onmouseover="this.className='toady_deal_list toady_deal_listhover'" onmouseout="this.className='toady_deal_list'">
+	
+  <div class="deal_box">
+  
+    <div class="img_box">
+                <a href="{$group_buy.url}" target="_blank">
+            <img original="{$group_buy.group_img}" alt="{$group_buy.act_name|escape:html}" src="{$group_buy.group_img}" style="display: inline; ">        </a>   </div>
+			
+    <a class="title_box" href="{$group_buy.url}" target="_blank">
+    <span class="pink" style="font-size:16px">{$group_buy.t_discount}折/</span>{if $group_buy.group_title}{$group_buy.group_title}{else}{$group_buy.act_name}{/if} </a>
+    <div class="koubei_box">
+           <span class="koubei_link">新品上线，赶快来试试吧！</span>
+      </div>
+    <div class="price_box">
+        <div class="p"><!-- {foreach from=$group_buy.price_ladder item=item name=foo} --><!-- {if $smarty.foreach.foo.last} -->{$item.price}<!-- {/if} --><!-- {/foreach} --></div>
+        <a href="{$group_buy.url}" target="_blank"></a>
+        <div class="p_detail">
+            <p>市场价{$group_buy.market_price}</p>
+            <p>
+                您节省 {$group_buy.formated_rebate_price}        </p>
+        </div>
+    </div>
+    <div class="time_box" diff="47561">
+    <span class="icon"></span>
+    
+    <font id="leftTime{$key}"></font>   
+    
+      
+    </div>
+    <div class="num_box">
+                    <span class="icon"></span>
+                    
+                    <span class="buy_num">
+            {if $group_buy.isg_rs eq 1}{$group_buy.group_rs}{else}{$group_buy.cur_amount}{/if}</span>人已经购买    </div>
+            
+    
+</div>
+    </div>   
+  <div class="shadow"></div>
+
+<script>
+Tday[{$key}] = new Date("{$group_buy.gmt_end_date|default:0}");
+window.setInterval(function()     
+{clock({$key});}, 1000);     
+</script>
+<div style=" clear:both"></div>
+
+  <!--{/if}-->
+  
+	<!--{/foreach}-->        
+
+
+             
+ 
+      <div class="blank"></div>  
+    <div class="blank"></div>    
+<form name="selectPageForm" action="./index_files/index.html" method="get">
+ <div id="pager" class="pagebar">
+ 
+       
+	 <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+
+    
+  
+    </div>
+ 
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+//-->
+</script>
+<div class="blank" style="height:40px;"></div>    
+    
+    
+      
+</div>
+</div>
+ 
+ <div class="group_r">
+ 
+
+
+ 
+ 
+<script type="text/javascript">
+    $(document).ready(function(){
+        var obj = $('#sidebar_comment_container');
+        var per_move =81;
+        
+        var num = obj.find('.comment_content').length;
+        var i = 1;
+        obj.everyTime(5000,'sidebar_comments',function(){
+            obj.animate({top: '-'+per_move*i},'fast');
+            if( i == (num-3) ){
+                i = 1;
+            }else{
+                i++;
+            }
+        });
+    });
+</script>
+<div style="border-top: 1px solid #ececec;
+box-shadow: 1px 2px 6px #d2d2d2;">
+            <!-- TemplateBeginEditable name="团购右边广告一" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --></div>
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="blank5"></div>
+<div style="border-top: 1px solid #ececec;
+box-shadow: 1px 2px 6px #d2d2d2;">
+            <!-- TemplateBeginEditable name="团购右边广告二" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+ </div>
+ 
+ <div class="blank5"></div>
+
+<div class="blank5"></div>
+<style>
+#fast_report{
+background: #fff;
+
+overflow: hidden;
+position: relative;
+}
+#fast_report .fr_con{ border-bottom:dashed 1px #dddddd;width:230px;margin-left:5px; line-height:20px;padding:5px 0px;}
+.fast_report_container{ }
+.fast_report_container a{ color:#333;font-family: Arial,"宋体";}
+.fast_report_container a:hover{color:#ec1357;}
+.title{
+height: 40px;
+line-height: 40px;
+padding-left: 10px;
+background: #000;
+font-size: 14px;
+font-family: "微软雅黑";
+color: #FFF;
+}
+</style> 
+ <div class="box_v1">
+    <div class="title">聚美快报</div>
+    <div id="fast_report">
+        <div class="fast_report_container">
+		
+		
+		  <!-- TemplateBeginEditable name="潮流前沿" -->
+<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
+
+
+
+  <!--{foreach from=$articles item=article_item name=no}-->
+	
+<div class="fr_con"><a href="{$article_item.url}" target="_blank">{$article_item.short_title}</a></div>
+  <!--{/foreach}-->
+
+
+            
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+             
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="blank"></div>
+<div class="blank5"></div>
+<div style="border-top: 1px solid #ececec;
+box-shadow: 1px 2px 6px #d2d2d2;">
+            <!-- TemplateBeginEditable name="团购右边广告三" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+ </div>
+
+
+
+<div class="blank"></div>
+<div class="blank5"></div>
+<div style="border-top: 1px solid #ececec;
+box-shadow: 1px 2px 6px #d2d2d2;">
+            <!-- TemplateBeginEditable name="团购右边广告四" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+ </div>
+
+</div>
+</div>
+
+
+</div>
+
+
+  <div class="clear"></div>    
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
