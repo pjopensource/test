@@ -59,4 +59,4 @@ $k = array (
 echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
 ?>
 -->
-    
+<script src="/js/qq_float_right.js"></script>    
