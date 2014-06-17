@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1403021105;s:8:"maketime";i:1403017505;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1403024421;s:8:"maketime";i:1403020821;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" /> 
@@ -145,9 +145,8 @@ try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
       
 		  <div  id="topnavboxss" style=" display:none; ">
                         <ul>
-                            <li class="sina"><a href="#" rel="nofollow" target="_blank"><span class="arrow"></span>新浪微博</a></li>
+                            <li class="sina"><a href="http://weibo.com/u/1915499135" rel="nofollow" target="_blank"><span class="arrow"></span>新浪微博</a></li>
                             <li class="qqblog"><a href="#" rel="nofollow" target="_blank"><span class="arrow"></span>腾讯微博</a></li>
-                            <li class="qq"><a href="#" rel="nofollow" target="_blank"><span class="arrow"></span>QQ空间</a></li>
                         </ul>
                         <div class="clear"></div>
                     </div>
@@ -177,10 +176,6 @@ function showtopMenu(dos){
     <div id="logo">
 		<a href="index.php" id="home"><img src="themes/jumei/images/logo.png" ></a>
         <a id="cart" href="flow.php" style="background:none; margin-left:715px;"><img src="themes/jumei/images/gouwudd.jpg" ></a>
-        <a href="#" class="top_link persent" target="_blank"></a>
-        <a href="#" class="top_link credit" target="_blank"></a>
-        <a href="#" class="top_link gild" target="_blank"></a>
-        <a href="#" class="top_link lightning" target="_blank"></a>
         	
 </div>
     <div class="clear"></div>
@@ -283,8 +278,7 @@ function showtopMenu(dos){
       </script>
 <div class="yl_up">
 	<a class="bookmark" href="message.php"></a> <a href="#top" class="to_top" align="absmiddle" alt="回顶部"></a>
-</div><div class="blank" id="kbaidddddd"></div>
-<style>
+</div><div class="blank" id="kbaidddddd"></div><style>
 #kbaidddddd{display:none;}
 </style>
 <div id="container" >

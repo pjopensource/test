@@ -68,9 +68,8 @@ try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
       
 		  <div  id="topnavboxss" style=" display:none; ">
                         <ul>
-                            <li class="sina"><a href="#" rel="nofollow" target="_blank"><span class="arrow"></span>新浪微博</a></li>
+                            <li class="sina"><a href="http://weibo.com/u/1915499135" rel="nofollow" target="_blank"><span class="arrow"></span>新浪微博</a></li>
                             <li class="qqblog"><a href="#" rel="nofollow" target="_blank"><span class="arrow"></span>腾讯微博</a></li>
-                            <li class="qq"><a href="#" rel="nofollow" target="_blank"><span class="arrow"></span>QQ空间</a></li>
                         </ul>
                         <div class="clear"></div>
                     </div>
@@ -106,10 +105,6 @@ echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
     <div id="logo">
 		<a href="index.php" id="home"><img src="themes/jumei/images/logo.png" ></a>
         <a id="cart" href="flow.php" style="background:none; margin-left:715px;"><img src="themes/jumei/images/gouwudd.jpg" ></a>
-        <a href="#" class="top_link persent" target="_blank"></a>
-        <a href="#" class="top_link credit" target="_blank"></a>
-        <a href="#" class="top_link gild" target="_blank"></a>
-        <a href="#" class="top_link lightning" target="_blank"></a>
         	
 </div>
     <div class="clear"></div>
