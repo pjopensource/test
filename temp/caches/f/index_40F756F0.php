@@ -1,14 +1,14 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1402852156;s:8:"maketime";i:1402848556;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:39:"/home/jpan/jumei/themes/jumei/index.dwt";i:1;s:53:"/home/jpan/jumei/themes/jumei/library/page_header.lbi";i:2;s:50:"/home/jpan/jumei/themes/jumei/library/index_ad.lbi";i:3;s:53:"/home/jpan/jumei/themes/jumei/library/ad_position.lbi";i:4;s:53:"/home/jpan/jumei/themes/jumei/library/page_footer.lbi";}s:7:"expires";i:1403021105;s:8:"maketime";i:1403017505;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" /> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="红星美凯龙 建材 家具 家居 综合购物类网站" />
-<meta name="Description" content="拇指家" />
-<title>拇指家 - Powered by ECShop</title>
+<meta name="Keywords" content="项链 手链 水晶 玉石 流行饰品购物类网站" />
+<meta name="Description" content="最美饰" />
+<title>最美饰 - Powered by ECShop</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
-<link rel="alternate" type="application/rss+xml" title="RSS|拇指家 - Powered by ECShop" href="feed.php" />
+<link rel="alternate" type="application/rss+xml" title="RSS|最美饰 - Powered by ECShop" href="feed.php" />
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script><script type="text/javascript" src="themes/jumei/images/js/pic.js"></script>
 <script type="text/javascript" src="themes/jumei/images/js/left_goodslist.js"></script>
 <script type="text/javascript" src="themes/jumei/images/js/jquery.js"></script>
@@ -194,71 +194,11 @@ function showtopMenu(dos){
       <LI class=mainmenu_li  style="background:#d4062d" ><a href="index.php">首页</a></LI>
 	                      <LI onMouseOver="sw_nav('1',1);" onMouseOut="sw_nav('1',0);"   >
         <DIV class="mainmenu_li" id=HandleLI_1 >
-                        <a href="group_buy.php">每日精选</a></DIV>
+                        <a href="group_buy.php">今日特卖</a></DIV>
 		    
 	                </LI>           
 		                   <LI onMouseOver="sw_nav('2',1);" onMouseOut="sw_nav('2',0);"   >
         <DIV class="mainmenu_li" id=HandleLI_2 >
-                        <a href="category.php?id=1">团购活动</a></DIV>
-		    
-	  	            <DIV id=DisSub_2 style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
-          <DIV class="layer">
-            <DIV class=layer_left>
-              <DL>
-                     <DD><a  href="category.php?id=36" title="底妆"  target="_blank">底妆</a></DD>
-         
-                <DD><a  href="category.php?id=37" title="唇彩"  target="_blank">唇彩</a></DD>
-         
-                <DD><a  href="category.php?id=38" title="眼影"  target="_blank">眼影</a></DD>
-         
-                <DD><a  href="category.php?id=39" title="睫毛膏"  target="_blank">睫毛膏</a></DD>
-         
-                <DD><a  href="category.php?id=40" title="粉底"  target="_blank">粉底</a></DD>
-         
-                <DD><a  href="category.php?id=41" title="隔离"  target="_blank">隔离</a></DD>
-         
-                <DD><a  href="category.php?id=42" title="粉饼"  target="_blank">粉饼</a></DD>
-         
-         
-              </DL>
-            </DIV>
-            
-          </DIV>
-        </DIV>
-                              </LI>           
-		                   <LI onMouseOver="sw_nav('3',1);" onMouseOut="sw_nav('3',0);"   >
-        <DIV class="mainmenu_li" id=HandleLI_3 >
-                        <a href="category.php?id=16">装修服务</a></DIV>
-		    
-	  	            <DIV id=DisSub_3 style="DISPLAY:none; Z-INDEX: 999; POSITION: relative; _top:-38px; _left:-54px;">
-          <DIV class="layer">
-            <DIV class=layer_left>
-              <DL>
-                     <DD><a  href="category.php?id=48" title="洗发"  target="_blank">洗发</a></DD>
-         
-                <DD><a  href="category.php?id=49" title="护发"  target="_blank">护发</a></DD>
-         
-                <DD><a  href="category.php?id=50" title="沐浴"  target="_blank">沐浴</a></DD>
-         
-                <DD><a  href="category.php?id=51" title="身体乳"  target="_blank">身体乳</a></DD>
-         
-                <DD><a  href="category.php?id=52" title="脱毛"  target="_blank">脱毛</a></DD>
-         
-                <DD><a  href="category.php?id=53" title="瘦身"  target="_blank">瘦身</a></DD>
-         
-                <DD><a  href="category.php?id=54" title="手足护理"  target="_blank">手足护理</a></DD>
-         
-                <DD><a  href="category.php?id=71" title="保健品"  target="_blank">保健品</a></DD>
-         
-         
-              </DL>
-            </DIV>
-            
-          </DIV>
-        </DIV>
-                              </LI>           
-		                   <LI onMouseOver="sw_nav('4',1);" onMouseOut="sw_nav('4',0);"   >
-        <DIV class="mainmenu_li" id=HandleLI_4 >
                         <a href="222">所有品牌</a></DIV>
 		    
 	                </LI>           
@@ -1581,7 +1521,7 @@ new Marquee("MarqueeDiv2",1,0.1,960,100,20,4000,5000)	//向上间歇滚动(缓�
                 <div class="blank"></div>
              <div id="foot_b">
  <div class="text">
-&copy; 2005-2014 拇指家 版权所有，并保留所有权利。  客服热线：123456 <br />
+&copy; 2005-2014 最美饰 版权所有，并保留所有权利。  客服热线：286582261 <br />
      
 <div style=" margin-top:10px">
                 <img src="themes/jumei/images/footer_credit_icons.jpg" alt="" usemap="#bottom_map_icons">

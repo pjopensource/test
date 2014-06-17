@@ -22,12 +22,7 @@ window.onerror = killerrors;
 //-->
 </script>
 <body>
-<div id="header_container">
-    <div style="width: 965px; margin: 0 auto;"><img usemap="#header_logo_banner_map" src="./images/login_logo.png" alt="回到首页"></div>
-    <map name="header_logo_banner_map" id="header_logo_banner_map">
-        <area shape="rect" coords="0,0,220,100" href ="index.php" alt="芒果模版中心" />
-    </map>
-    </div>    
+ <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="block block1">
 <!--#登录界面 start-->
 <!-- {if $action eq 'login'} -->

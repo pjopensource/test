@@ -23,7 +23,7 @@ function WriteQqStr()
 	document.write('<table border="0" cellpadding="0" cellspacing="0" width="55">');
 	document.write("<tr><td align=center><img src=\"/images/qqkefu/zxkf_title.gif\"></td></tr>");
 	document.write("<tr><td align=center><br><a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=291793194&site=qq&menu=yes\" ><IMG src=\"/images/qqkefu/zxkf_qq.gif\" border=0></a></td></tr>");
-	document.write("<tr><td align=center><br><a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=111111&site=qq&menu=yes\" ><IMG src=\"/images/qqkefu/zxkf_qq.gif\" border=0></a></td></tr>");
+	document.write("<tr><td align=center><br><a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=286581161&site=qq&menu=yes\" ><IMG src=\"/images/qqkefu/zxkf_qq.gif\" border=0></a></td></tr>");
 	document.write("<tr><td align=center><br><a target=\"_blank\" href=\"http://qun.qq.com/#jointhegroup/gid/111111\"><IMG src=\"/images/qqkefu/zxkf_sh.gif\" border=0></a><br><br></td></tr>");
 	document.write('</table>');
 	document.write('</DIV>');

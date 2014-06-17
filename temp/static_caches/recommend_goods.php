@@ -9,7 +9,7 @@ $data = array (
     ),
     1 => 
     array (
-      'goods_id' => '158',
+      'goods_id' => '160',
       'sort_order' => '100',
     ),
     2 => 
@@ -19,12 +19,12 @@ $data = array (
     ),
     3 => 
     array (
-      'goods_id' => '143',
+      'goods_id' => '158',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '160',
+      'goods_id' => '143',
       'sort_order' => '100',
     ),
     5 => 
@@ -87,25 +87,30 @@ $data = array (
     ),
     1 => 
     array (
-      'goods_id' => '141',
+      'goods_id' => '161',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '153',
+      'goods_id' => '141',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '152',
+      'goods_id' => '153',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '142',
+      'goods_id' => '152',
       'sort_order' => '100',
     ),
     5 => 
+    array (
+      'goods_id' => '142',
+      'sort_order' => '100',
+    ),
+    6 => 
     array (
       'goods_id' => '149',
       'sort_order' => '100',
@@ -120,12 +125,12 @@ $data = array (
     ),
     1 => 
     array (
-      'goods_id' => '158',
+      'goods_id' => '160',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '160',
+      'goods_id' => '158',
       'sort_order' => '100',
     ),
     3 => 
@@ -177,12 +182,12 @@ $data = array (
   'brand' => 
   array (
     140 => '西蒙开关',
-    158 => '九牧卫浴',
-    161 => '好莱客移门衣柜',
-    143 => '欧普照明',
     160 => '喜临门床垫',
-    159 => '朗斯淋浴房',
+    161 => '好莱客移门衣柜',
+    158 => '九牧卫浴',
+    143 => '欧普照明',
     141 => '西蒙开关',
+    159 => '朗斯淋浴房',
     157 => '欧普吊顶',
     156 => '卡贝卫浴',
     155 => '全能保险柜',
